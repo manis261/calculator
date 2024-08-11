@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodSoft</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Reset default browser styles */
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+#home {
+    background: #333;
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background: #e8491d;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #333;
+}
+
+/* Section styles */
+section {
+    padding: 2rem 0;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+#about p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+#services {
+    background: #fff;
+}
+
+.service-item {
+    margin-bottom: 1.5rem;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background: #e8491d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #333;
+}
+
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer a {
+    color: #e8491d;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>CodSoft</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <div class="hero-content">
+            <h1>Welcome to CodSoft</h1>
+            <p>Innovative Software Solutions for Modern Businesses</p>
+            <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At CodSoft, we specialize in providing cutting-edge software solutions to help businesses streamline their operations and enhance productivity. Our team of experts is dedicated to delivering top-notch services tailored to your needs.</p>
+        </div>
+    </section>
+    
+    <section id="services">
+        <div class="container">
+            <h2>codsoft service</h2>
+            <img src="https://cdn.techjockey.com/blog/wp-content/uploads/2023/05/16174100/types-of-graphic-design-feature-image.jpg?d=840" alt="">
+            <div class="service-item">
+                <h3>Custom Software Development</h3>
+                <p>We build customized software solutions to meet the specific needs of your business, ensuring maximum efficiency and productivity.</p>
+            </div>
+            <div class="service-item">
+                <h3>Web Development</h3>
+                <img src="https://varthana.com/student/wp-content/uploads/2023/03/B58.jpg" width="300" height="250" alt="">
+                <p>Our team creates stunning, responsive websites that provide a seamless user experience and help you stand out online.</p>
+            </div>
+            <div class="service-item">
+                <h3>Mobile App Development</h3>
+                <p>We develop high-performance mobile applications for iOS and Android that engage users and drive business growth.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CodSoft. All rights reserved. | <a href="#privacy">Privacy Policy</a></p>
+        </div>
+    </footer>
+</body>
+</html>
